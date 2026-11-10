@@ -32,12 +32,3 @@
 .flow{animation:dash 1.4s linear infinite;stroke-dasharray:8 8}.nd{animation:pulse 3.2s ease-in-out infinite}.nd:nth-child(2){animation-delay:.6s}.nd:nth-child(3){animation-delay:1.2s}.nd:nth-child(4){animation-delay:1.8s}
 .band{background:linear-gradient(90deg,rgba(93,169,233,.13),rgba(215,168,91,.08),rgba(196,71,80,.13));color:var(--ice)}
 .pp{border-top-color:var(--ice);animation:rise .6s cubic-bezier(.2,.7,.2,1)}.ticks li::before{background:var(--ice)}.dl h4{color:var(--gold)}.chk input{accent-color:var(--ice)}
-
-/* Commerce Labs — unified Nordic heritage palette */
-.chero::before{background:linear-gradient(rgba(127,108,83,.12) 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,rgba(127,108,83,.12) 1px,transparent 1px) 0 0/60px 60px;mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%)}
-.chero .mono,.mono{color:var(--gold)}.chero .mono::before,.mono::before{color:var(--gold)}
-.chero h1{background:none;color:var(--tx);-webkit-text-fill-color:currentColor;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
-.band{background:rgba(50,84,84,.12);color:#A6B8AE}
-.pp{background:var(--card);border-color:var(--bd);border-top-color:var(--gold)}
-.ticks li::before{background:var(--gold)}.dl{background:var(--bg2);border-color:var(--bd)}.dl h4{color:var(--gold)}
-.chk input{accent-color:var(--gold)}
