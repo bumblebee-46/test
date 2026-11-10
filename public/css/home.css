@@ -140,4 +140,5 @@ h1.in{background:linear-gradient(100deg,#fff 0%,#cfe6ff 30%,#76E4C0 52%,#E9B44C 
 
 .hero{position:relative;isolation:isolate;overflow:hidden}
 #emb{z-index:0}
-.hero>*:not(#emb){position:relative;z-index:1}
+.hero>.wrap{position:relative;z-index:1;width:100%}
+.hero>.grid{position:absolute;z-index:0}
