@@ -1,0 +1,5 @@
+/* COMMERCE PAGE: platform tabs and price check calculator */
+(()=>{const tl=$('[role=tablist]');if(tl){const tabs=[...tl.querySelectorAll('[role=tab]')];
+const pick=i=>tabs.forEach((t,j)=>{const on=i===j;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on});
+tabs.forEach((t,i)=>{t.onclick=()=>pick(i);t.onkeydown=e=>{const k={ArrowRight:1,ArrowLeft:-1}[e.key];if(k){const n=(i+k+tabs.length)%tabs.length;pick(n);tabs[n].focus()}}})}})();
+(()=>{const q=id=>$('#'+id),ids=['cc','cf','cv','cm'];function u(){const c=+q('cc').value,f=+q('cf').value/100,v=+q('cv').value/100,m=+q('cm').value/100;ids.forEach(i=>q(i+'o').textContent=i==='cc'?'£'+c.toFixed(2):q(i).value+'%');const d=1-f-m;if(d<=.02){q('cr').textContent='n/a';q('ci').textContent='Fee plus margin is too high.';q('cp').textContent='';return}const ex=c/d;q('cr').textContent='£'+(ex*(1+v)).toFixed(2);q('ci').textContent='£'+ex.toFixed(2)+' ex VAT';q('cp').textContent='Profit about £'+(ex*m).toFixed(2)+' per unit'}ids.forEach(i=>q(i).addEventListener('input',u));u()})();

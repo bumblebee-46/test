@@ -1,0 +1,34 @@
+/* COMMERCE LABS PAGE ONLY (cool blue accent, platforms, price check) */
+.chero{padding:140px 0 70px;position:relative;overflow:hidden;min-height:92svh;display:flex;align-items:center}
+.chero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(39,49,73,.35) 1px,transparent 1px) 0 0/60px 60px,linear-gradient(90deg,rgba(39,49,73,.35) 1px,transparent 1px) 0 0/60px 60px;mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000,transparent 70%)}
+.chero .wrap{position:relative;display:grid;gap:40px;align-items:center}
+.chero .mono{color:var(--ice)}.chero .mono::before{content:"ᚲ";color:var(--ice)}
+.chero h1{font-size:clamp(2.3rem,6.4vw,4.8rem);max-width:15ch;background:linear-gradient(100deg,#fff 0%,#cfe6ff 45%,#6CB8FF 75%,#fff 100%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards,shine 9s ease-in-out 1s infinite alternate}
+.chero p{margin:24px 0 32px}.cta{display:flex;flex-wrap:wrap;gap:12px}
+@keyframes shine{to{background-position:100% 0}}
+.pipe{width:100%;max-width:460px;justify-self:center}
+.flow{animation:dash 1.4s linear infinite}@keyframes dash{to{stroke-dashoffset:-32}}
+.nd{animation:pulse 3.2s ease-in-out infinite}.nd:nth-child(2){animation-delay:.6s}.nd:nth-child(3){animation-delay:1.2s}.nd:nth-child(4){animation-delay:1.8s}
+@keyframes pulse{50%{opacity:.3}}
+@media(min-width:900px){.chero .wrap{grid-template-columns:1.15fr .85fr}}
+.band{background:linear-gradient(90deg,rgba(108,184,255,.12),rgba(233,180,76,.07),rgba(108,184,255,.12));color:var(--ice)}
+.mono{color:var(--ice)}.mono::before{color:var(--gold)}
+#services .mono::before{content:"ᚦ"}#platforms .mono::before{content:"ᛗ"}#process .mono::before{content:"ᚱ"}#pricecheck .mono::before{content:"ᚨ"}#faq .mono::before{content:"ᛉ"}#contact .mono::before{content:"ᛟ"}
+.cg.three{display:grid;gap:14px}@media(min-width:640px){.cg.three{grid-template-columns:1fr 1fr}}@media(min-width:1000px){.cg.three{grid-template-columns:repeat(3,1fr)}}
+.pp{display:grid;gap:24px;margin-top:8px;padding:30px;border:1px solid var(--bd);background:var(--card);border-top:2px solid var(--ice);animation:rise .6s cubic-bezier(.2,.7,.2,1)}
+.pp[hidden]{display:none}@keyframes rise{from{opacity:0;transform:translateY(14px)}}
+.pp h3{font-size:1.5rem;margin-bottom:10px}.pp p{color:var(--tx2)}
+.ticks{list-style:none;display:grid;gap:10px;margin-top:18px}.ticks li{display:flex;gap:12px;color:var(--tx)}.ticks li::before{content:"";flex:none;width:8px;height:8px;margin-top:9px;background:var(--ice);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%)}
+.dl{border:1px dashed var(--bd);padding:22px;align-self:start;background:var(--bg2)}.dl h4{font:500 .8rem var(--mono);color:var(--gold);margin-bottom:10px}
+@media(min-width:900px){.pp{grid-template-columns:1.4fr .6fr}}
+#platforms .note{margin-top:20px;max-width:70ch}
+.cl{display:grid;gap:40px;align-items:center}@media(min-width:1000px){.cl{grid-template-columns:.9fr 1.1fr}}
+.chk{border:0;display:flex;flex-wrap:wrap;gap:8px 20px}.chk legend{margin-bottom:8px;color:var(--tx2);font-size:.85rem}
+.chk label{display:flex;align-items:center;gap:8px;color:var(--tx);font-size:.95rem;cursor:pointer}.chk input{width:auto;accent-color:var(--ice)}
+
+/* Commerce Labs uses the same Viking blue, red and gold palette as Fenronik Global. */
+.chero h1{background:linear-gradient(100deg,#fff 0%,#cfe6ff 55%,#e8a4a6 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards,shine 9s ease-in-out 1s infinite alternate}
+.chero .mono,.mono{color:var(--ice)}.chero .mono::before,.mono::before{color:var(--gold)}
+.flow{animation:dash 1.4s linear infinite;stroke-dasharray:8 8}.nd{animation:pulse 3.2s ease-in-out infinite}.nd:nth-child(2){animation-delay:.6s}.nd:nth-child(3){animation-delay:1.2s}.nd:nth-child(4){animation-delay:1.8s}
+.band{background:linear-gradient(90deg,rgba(93,169,233,.13),rgba(215,168,91,.08),rgba(196,71,80,.13));color:var(--ice)}
+.pp{border-top-color:var(--ice);animation:rise .6s cubic-bezier(.2,.7,.2,1)}.ticks li::before{background:var(--ice)}.dl h4{color:var(--gold)}.chk input{accent-color:var(--ice)}
