@@ -51,3 +51,8 @@ Until a form service is configured, the form opens the visitor's email app with 
 - Confirm the public contact details and service scope.
 - The use cases and solution previews are examples, not claims of completed client projects. Keep that distinction clear until you have published real case studies.
 - No live deployment was performed as part of this source revision.
+
+
+## Enquiry form configuration
+
+The homepage and Commerce Labs enquiry forms are connected to the Formspree endpoint configured in `public/js/config.js` (`https://formspree.io/f/xljbreld`). In the Formspree dashboard, ensure the form's notification recipient is set to `contact@fenronikglobal.in` and that the recipient email is verified. Submit a test from the deployed website and confirm it arrives before announcing the site launch. The endpoint is public by design; never place Formspree account credentials or private API keys in this file.

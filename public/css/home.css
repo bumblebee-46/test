@@ -118,3 +118,22 @@ h1.in{background:linear-gradient(100deg,#fff 0%,#cfe6ff 30%,#76E4C0 52%,#E9B44C 
 .caps li::before{background:var(--ac);clip-path:none}
 .fnd .role{color:var(--ac)}
 @media(prefers-reduced-motion:reduce){.ring,.ring2,.node{animation:none!important}.svc.v article{animation:none!important}}
+
+/* FENRONIK MOTION RESTORE — visible, restrained homepage animation */
+@keyframes heroTitleIn{from{opacity:0;transform:translateY(24px);filter:blur(5px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+@keyframes heroTitleShine{to{background-position:100% 0}}
+@keyframes wolfFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes haloBreathe{0%,100%{transform:scale(.96);opacity:.45}50%{transform:scale(1.08);opacity:.9}}
+@keyframes nodePulse{0%,100%{opacity:1}50%{opacity:.3}}
+@keyframes bandGlow{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.hero h1.in{opacity:0;animation:heroTitleIn 1s cubic-bezier(.2,.7,.2,1) .12s forwards,heroTitleShine 8s ease-in-out 1.2s infinite alternate;background:linear-gradient(100deg,#fff 0%,#dce9ff 34%,var(--gold) 62%,#fff 82%);background-size:240% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark img{animation:wolfFloat 6s ease-in-out infinite;will-change:transform}
+.mark::before{animation:haloBreathe 5.5s ease-in-out infinite;will-change:transform,opacity}
+.ring{animation:spin 48s linear infinite}
+.ring2{animation:spin 72s linear infinite reverse}
+.node{animation:nodePulse 3.8s ease-in-out infinite}
+.node:nth-of-type(2n){animation-delay:1.25s}.node:nth-of-type(3n){animation-delay:2.5s}
+.svc.v article{animation:rise .75s cubic-bezier(.2,.7,.2,1) both}
+.svc.v article:nth-child(2){animation-delay:.08s}.svc.v article:nth-child(3){animation-delay:.16s}.svc.v article:nth-child(4){animation-delay:.24s}.svc.v article:nth-child(5){animation-delay:.32s}.svc.v article:nth-child(6){animation-delay:.4s}
+.band{background-size:220% 220%;animation:bandGlow 14s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.hero h1.in,.mark img,.mark::before,.ring,.ring2,.node,.svc.v article,.band{animation:none!important}.hero h1.in{opacity:1;transform:none;filter:none}}
