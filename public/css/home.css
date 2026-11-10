@@ -42,7 +42,7 @@ td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--bd);color:va
 .fnd{display:grid;gap:44px;align-items:center}
 .fnd p{color:var(--tx2);margin-top:18px;max-width:58ch}.fnd .role{color:var(--ac);margin-top:26px;font:.85rem var(--mono)}
 .fnd{position:relative}.fnd>div{max-width:760px}.sig{margin-top:30px;padding-left:18px;border-left:2px solid var(--gold)}.sig strong{display:block;font-size:1.5rem;letter-spacing:-.02em}.sig span{color:var(--gold);font:.85rem var(--mono)}
-@media(min-width:900px){.fnd::after{content:"";position:absolute;right:var(--pad);top:50%;width:300px;height:380px;transform:translateY(-50%);background:url(../assets/wolf.png) center/contain no-repeat;opacity:.08;pointer-events:none}}
+
 /* process */
 /* why */
 /* faq */
@@ -137,3 +137,24 @@ h1.in{background:linear-gradient(100deg,#fff 0%,#cfe6ff 30%,#76E4C0 52%,#E9B44C 
 .svc.v article:nth-child(2){animation-delay:.08s}.svc.v article:nth-child(3){animation-delay:.16s}.svc.v article:nth-child(4){animation-delay:.24s}.svc.v article:nth-child(5){animation-delay:.32s}.svc.v article:nth-child(6){animation-delay:.4s}
 .band{background-size:220% 220%;animation:bandGlow 14s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.hero h1.in,.mark img,.mark::before,.ring,.ring2,.node,.svc.v article,.band{animation:none!important}.hero h1.in{opacity:1;transform:none;filter:none}}
+
+/* Nordic heritage theme overrides */
+.hero h1.in{background:none;color:var(--tx);-webkit-text-fill-color:currentColor;animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero .mono{color:var(--gold)}
+.mark img{filter:drop-shadow(0 12px 28px rgba(50,84,84,.2))}
+.mark::before{background:radial-gradient(circle,rgba(50,84,84,.22),rgba(127,108,83,.08) 58%,transparent 72%)}
+.mark .node{fill:var(--gold)}
+.svc article{--c:var(--gold);background:var(--bg)}
+.svc article:nth-child(n){--c:var(--gold)}
+.svc article::after{background:var(--gold)}
+.svc article:hover{background:var(--card)}
+.svc article h3,.svc article:hover h3{color:var(--tx)}
+.ic .a,.svc article:hover .ic{stroke:var(--gold)}
+.use-grid article{background:var(--bg2)}.use-grid article span{color:var(--gold)}
+.chart i,.chart i:nth-child(even){background:linear-gradient(var(--ice),rgba(50,84,84,.16))}
+.caps li::before{background:var(--gold)}
+.fnd .role,.sig span{color:var(--gold)}.sig{border-color:var(--gold)}
+.rot b{color:var(--ice)}
+.cell{color:#7F6C53;background:var(--card);border-color:var(--bd)}
+.cell.on,.cell.on.gold{color:#F1E7D8;background:var(--em);border-color:var(--em);box-shadow:0 0 20px rgba(98,57,46,.32)}
+.cell.hit{background:var(--ice);color:#F1E7D8;border-color:var(--ice)}

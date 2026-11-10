@@ -146,3 +146,67 @@ input[type=range]{padding:0;border:0;background:none;accent-color:var(--ice);hei
 .modal.o .mic svg{animation:tick .6s .2s ease forwards}@keyframes tick{to{stroke-dashoffset:0}}
 .mbox h3{font-size:1.4rem;margin-bottom:10px}.mbox p{color:var(--tx2);margin-bottom:22px;font-size:.98rem}.mbox a{color:var(--gold);border-bottom:1px solid var(--bd)}
 
+
+/* FENRONIK NORDIC HERITAGE PALETTE — approved 2026-11-10 */
+:root{
+  --bg:#151412;
+  --bg2:#201b17;
+  --card:#29231d;
+  --tx:#E9E0D3;
+  --tx2:#B8AA97;
+  --ac:#7F6C53;
+  --bd:#493B2F;
+  --em:#62392E;
+  --gold:#7F6C53;
+  --ice:#325454;
+  --bronze:#3C2F22;
+  --f:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+}
+body{background:var(--bg);color:var(--tx)}
+body::before{
+  background:
+    radial-gradient(44vmax 34vmax at 8% 8%,rgba(127,108,83,.13),transparent 72%),
+    radial-gradient(40vmax 34vmax at 92% 26%,rgba(50,84,84,.16),transparent 72%),
+    radial-gradient(38vmax 30vmax at 52% 100%,rgba(98,57,46,.12),transparent 72%),
+    repeating-linear-gradient(135deg,rgba(127,108,83,.018) 0 1px,transparent 1px 7px);
+  animation:drift 34s ease-in-out infinite alternate;
+}
+:focus-visible{outline-color:var(--gold)}
+.skip{background:var(--gold);color:#151412}
+.btn{border-color:var(--bd);color:var(--tx)}
+.btn:hover{border-color:var(--gold);color:#F1E7D8}
+.btn.p,.fab{background:var(--em);border-color:var(--em);color:#F2E8D9;box-shadow:0 8px 26px -14px rgba(98,57,46,.85)}
+.btn.p:hover{background:#744638;border-color:#744638;box-shadow:0 10px 30px -12px rgba(98,57,46,.9)}
+.btn.p::after{display:none}
+header.s{background:rgba(21,20,18,.9);border-color:var(--bd)}
+.menu{background:rgba(21,20,18,.98)}
+.links{color:var(--tx2)}.links a:hover,.ft a:hover{color:var(--gold)}
+.burger{border-color:var(--bd)}.burger i{background:var(--tx)}
+.alt{background:rgba(32,27,23,.88);border-color:var(--bd)}
+.tab[aria-selected=true]{background:var(--card);color:var(--gold);border-color:var(--gold);box-shadow:none}
+.win{background:var(--card);border-color:var(--bd);box-shadow:0 28px 70px -38px #000}
+.tag,.mono{color:var(--gold)}
+.low{color:#B78B6C}
+.calc label,.rg{color:var(--tx2)}.calc label b,.rg b{color:var(--tx)}
+.res strong,.kpi b{color:var(--gold);background:none;-webkit-text-fill-color:currentColor}
+.step{border-color:var(--bd)}.step::before{background:var(--bg);border-color:var(--gold);color:var(--gold)}
+.whyg,.why,details,summary{border-color:var(--bd)}
+.why:hover{border-bottom-color:var(--gold)}.why:hover h3,summary:hover{color:var(--gold)}
+summary::after{color:var(--gold)}
+input,select,textarea{background:#1B1916;border-color:var(--bd);color:var(--tx)}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(127,108,83,.18)}
+#st,.st{color:#9DB8AD}
+.cd a{color:var(--tx);border-color:var(--bd)}.cd a:hover{border-color:var(--gold)}
+footer{background:linear-gradient(180deg,#201b17,#151412);border-color:var(--bd)}
+.ft h4{color:var(--tx)}.ft ul,.ft p,.bot{color:var(--tx2)}
+.bot{border-color:var(--bd)}.bot .rune{color:var(--gold)}
+.band{background:rgba(50,84,84,.12);border-color:var(--bd);color:#A6B8AE}
+.knot{opacity:.48;filter:sepia(.55)}
+.chips span{border-color:var(--ice);color:#9DB8AD}.chips span:hover{background:var(--ice);color:#F1E7D8}
+.cg article{background:var(--card);border-color:var(--bd);border-top-color:var(--gold)}
+.cg article:hover{border-color:var(--gold);box-shadow:0 16px 38px -24px rgba(127,108,83,.55)}
+.cg article b{color:var(--gold)}.cg p{color:var(--tx2)}
+.fab{color:#F2E8D9;background:var(--em);box-shadow:0 8px 26px -14px rgba(98,57,46,.85)}
+.top{border-color:var(--gold);background:rgba(21,20,18,.9);color:var(--gold)}.top:hover{background:var(--gold);color:#151412}
+.modal{background:rgba(10,9,8,.84)}.mbox{background:var(--card);border-color:var(--bd);border-top-color:var(--gold)}
+.mic{color:var(--ice)}.mbox.err{border-top-color:var(--em)}.mbox.info{border-top-color:var(--gold)}.mbox a{color:var(--gold)}

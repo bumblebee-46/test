@@ -1,0 +1,78 @@
+/* FENRONIK GLOBAL — FINAL CORPORATE PRESENTATION */
+:root{
+  --bg:#151412; --bg2:#1C1916; --card:#211D18;
+  --tx:#EEE7DC; --tx2:#B9AA97; --ac:#7F6C53; --bd:#40352B;
+  --em:#62392E; --gold:#7F6C53; --ice:#325454; --bronze:#3C2F22;
+}
+html{background:#151412}
+body{background:#151412!important;color:var(--tx)}
+body::before{display:none!important}
+header.s{background:rgba(21,20,18,.97);border-color:var(--bd)}
+.menu{background:#151412}
+#prog{background:var(--ice)}
+.brand{gap:0;min-width:0}
+.brand-lockup{display:block;width:clamp(190px,19vw,270px);height:auto;max-height:76px;object-fit:contain;transition:opacity .2s}
+.brand:hover .brand-lockup{filter:none;opacity:.88}
+.brand-commerce{gap:10px;color:var(--tx);font-family:Georgia,serif;font-size:1rem;letter-spacing:.08em}
+.brand-commerce img{width:44px;height:48px;object-fit:contain}
+.brand-commerce small{display:block;color:var(--ice);font:600 .63rem/1.3 system-ui,sans-serif;letter-spacing:.22em;margin-top:3px}
+.links{color:var(--tx2)}.links a:hover,.ft a:hover{color:#C1A47B}
+.links a[aria-current=page]{color:#C1A47B}
+.btn{border:1px solid var(--bd);background:transparent;color:var(--tx);box-shadow:none;border-radius:3px}
+.btn:hover{border-color:var(--ac);color:#F1E8DB;background:rgba(127,108,83,.08)}
+.btn.p,.fab{background:var(--em);border-color:var(--em);color:#F5EDE3;box-shadow:none}
+.btn.p:hover,.fab:hover{background:#75483C;border-color:#75483C;box-shadow:none}
+.btn.p::after{display:none!important}
+.hero{min-height:78svh;padding:130px 0 90px;background:#151412}
+.hero .grid,#emb{display:none!important}
+.hero::after{display:none!important}
+.hero .wrap{gap:clamp(28px,5vw,72px)}
+.hero .mono,.mono,.tag{color:#A89172}
+.hero h1,.hero h1.in,h1.in,.about-copy h1,.chero h1{background:none!important;color:#EEE7DC!important;-webkit-text-fill-color:currentColor!important;animation:up .7s ease both!important}
+.hero h1{max-width:14ch}
+.hero .lead,.lead{color:#B9AA97}
+.mark{width:min(34vw,390px);aspect-ratio:1;display:grid;place-items:center}
+.mark::before{display:none!important}
+.mark img.hero-wolf{position:relative;inset:auto;width:100%;height:100%;object-fit:contain;filter:none;animation:none}
+.alt{background:#1C1916;border-color:var(--bd)}
+.band{background:#1C1916;border-color:var(--bd);color:#B9AA97}
+.band .track{animation-duration:52s}
+h2,.principle h2{background:none!important;color:#EEE7DC!important;-webkit-text-fill-color:currentColor!important}
+.svc,.use-grid{background:var(--bd);border-color:var(--bd)}
+.svc article,.use-grid article{background:#1B1916}
+.svc article:hover,.use-grid article:hover{background:#211D18}
+.svc article::after{background:var(--ice)!important}
+.svc article::before{display:none!important}
+.svc article:nth-child(n){--c:var(--ice)}
+.ic{stroke:#B9AA97}.ic .a{stroke:var(--ice)}
+.svc article:hover h3{color:#C1A47B}
+.tab[aria-selected=true]{background:#211D18;color:#C1A47B;border-color:#7F6C53;box-shadow:none}
+.win,.pane,.kpi,.pp,.cg article{background:#211D18;border-color:var(--bd);box-shadow:none}
+.res strong,.kpi b{color:#C1A47B;background:none;-webkit-text-fill-color:currentColor}
+.step,.why,details,summary{border-color:var(--bd)}
+.step::before{background:#151412;border-color:var(--ac);color:#C1A47B}
+.chips span{border-color:var(--ice);color:#9AB8B4}.chips span:hover{background:var(--ice);color:#F1E8DB}
+.cg article{border-top-color:var(--ice)}.cg article:hover{border-color:var(--ac);box-shadow:none}
+.cg article b,.low{color:#C1A47B}
+input,select,textarea{background:#1B1916;border-color:var(--bd);color:var(--tx)}
+input:focus,select:focus,textarea:focus{border-color:var(--ice);box-shadow:0 0 0 3px rgba(50,84,84,.18)}
+footer{background:#11100F;border-color:var(--bd)}
+.ft h4{color:#EEE7DC}.ft ul,.ft p,.bot{color:#B9AA97}.bot{border-color:var(--bd)}
+.bot .rune{color:#7F6C53}
+.fab{color:#F5EDE3;background:var(--em)}
+.top{border-color:var(--ac);background:#151412;color:#C1A47B}.top:hover{background:#3C2F22;color:#EEE7DC}
+.modal{background:rgba(10,9,8,.84)}.mbox{background:#211D18;border-color:var(--bd);border-top-color:var(--ac)}
+.mic{color:var(--ice)}.mbox.err{border-top-color:var(--em)}.mbox.info{border-top-color:var(--ac)}.mbox a{color:#C1A47B}
+.about-hero,.about-page{background:#151412!important}
+.about-hero:before{display:none!important}
+.about-mark{width:min(34vw,360px);aspect-ratio:1}
+.about-mark img,.founder-visual img{width:100%;height:100%;object-fit:contain;filter:none!important;opacity:1;animation:none!important}
+.mark-halo,.rune-orbit,.founder-ring{display:none!important}
+.founder-visual{max-width:320px;aspect-ratio:1}
+.founder-copy h3{color:#C1A47B}
+.founder-signature{border-color:var(--ac)}.founder-signature span{color:#A89172}
+.chero{background:#151412}.chero h1{max-width:16ch}
+.chero svg{filter:none}
+@media(max-width:900px){.brand-lockup{width:190px;max-height:60px}.hero{min-height:auto;padding:115px 0 70px}.mark{width:min(64vw,330px);margin:0 auto}.about-mark{width:min(64vw,310px)}.links{gap:14px}}
+@media(max-width:520px){.brand-lockup{width:166px}.brand-commerce img{width:36px;height:40px}.hero .wrap{gap:24px}.hero h1{max-width:13ch}}
+@media(prefers-reduced-motion:reduce){.band .track{animation:none!important}}
