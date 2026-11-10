@@ -6,6 +6,8 @@ Static website deployed to Cloudflare Workers with static assets. No build step 
 
 - Repositioned the main website around intelligent automation, custom software and system integration.
 - Updated homepage title, search description and social metadata.
+- Added a separate About page at `public/about/`, with company philosophy and the third-person founder profile.
+- Fixed the homepage hero headline reveal so it is visible after the entrance animation.
 - Replaced the hero headline and copy with: **Automate the Work. Unlock the Possibilities.**
 - Reordered services around workflow automation, AI-assisted solutions, custom software, integrations, digital platforms and infrastructure.
 - Added a practical automation use-cases section.
@@ -21,6 +23,7 @@ Static website deployed to Cloudflare Workers with static assets. No build step 
 |---|---|
 | Main page text and metadata | `public/index.html` |
 | Commerce Labs page | `public/commerce/index.html` |
+| About page | `public/about/index.html` and `public/about/about.css` |
 | Shared colours, navigation, forms and motion | `public/css/base.css` |
 | Main page layout and components | `public/css/home.css` |
 | Commerce Labs styles | `public/css/commerce.css` |

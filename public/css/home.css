@@ -88,7 +88,7 @@ h1.in{background:linear-gradient(100deg,#fff 0%,#cfe6ff 30%,#76E4C0 52%,#E9B44C 
 
 
 /* Unified automation-first homepage */
-.hero h1{max-width:12ch;background:none;color:var(--tx);animation:fenronik-enter .55s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1{max-width:12ch;background:none;color:var(--tx)}
 .hero .mono{color:var(--ac);font-size:.82rem;letter-spacing:.06em}
 .hero::after{display:none}
 #emb{display:none}
@@ -112,7 +112,7 @@ h1.in{background:linear-gradient(100deg,#fff 0%,#cfe6ff 30%,#76E4C0 52%,#E9B44C 
 .use-grid article p{color:var(--tx2);font-size:.94rem}
 @media(min-width:640px){.use-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1000px){.use-grid{grid-template-columns:repeat(3,1fr)}}
-.pane.o{animation:fenronik-enter .55s cubic-bezier(.2,.7,.2,1) forwards}
+.pane.o{animation:up .55s cubic-bezier(.2,.7,.2,1) forwards}
 .pane.o .chart i{animation:none}
 .chart i,.chart i:nth-child(even){background:linear-gradient(var(--ac),rgba(118,205,178,.12))}
 .caps li::before{background:var(--ac);clip-path:none}
